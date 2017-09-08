@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "linux64",
+		"os_name" : "Ubuntu 14.04.5",
+		"os_version" : "14"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "none",
+		"error_message" : "return_value != NULL",
+		"source_file" : "/quartus/sld/sedq/sedq_tx_manager.cpp",
+		"line" : "11114",
+		"stack_trace" : "\t0x7efc02f56eaf: sld_sedq + 0x6deaf (_ZN15SEDQ_TX_MANAGER15get_instance_atEi + 0x41)\n\t0x7efc02f5e982: sld_sedq + 0x75982 (_ZN15SEDQ_TX_MANAGER13get_int_stateEiPKci + 0x18)\n\t0x7efc02f5f126: sld_sedq + 0x76126 (_ZN15SEDQ_TX_MANAGER22is_instance_setup_modeEv + 0x1a)\n\t0x7efc02f60857: sld_sedq + 0x77857 (_ZN9SEDQ_VIEW15save_scroll_posEv + 0x27)\n\t0x7efc02fd6eb9: sld_sedq + 0xedeb9 (_ZN15SEDQ_TX_MANAGER13save_documentEPKc + 0x97)\n\t0x7efc02ff68c0: sld_sedq + 0x10d8c0 (_ZN14SEDQ_FRAME_WND9save_fileERK7QString + 0x58)\n\t0x7efcb5ca381f: sys_qui + 0x9981f (_ZN13QUI_FRAME_WND14on_save_actionEv + 0x285)\n\t0x7efcb5cd9539: sys_qui + 0xcf539 (_ZN13QUI_FRAME_WND18qt_static_metacallEP7QObjectN11QMetaObject4CallEiPPv + 0x1f1)\n\t0x7efca56b61f8: QtCore.so.4 + 0x1be1f8 (_ZN11QMetaObject8activateEP7QObjectPKS_iPPv + 0x488)\n\t0x7efc7ec209c2: QtGui.so.4 + 0x1fd9c2 (_ZN7QAction9triggeredEb + 0x32)\n\t0x7efc7ec21d70: QtGui.so.4 + 0x1fed70 (_ZN7QAction8activateENS_11ActionEventE + 0xb0)\n\t0x7efc7f030384: QtGui.so.4 + 0x60d384\n\t0x7efc7f03061b: QtGui.so.4 + 0x60d61b (_ZN15QAbstractButton17mouseReleaseEventEP11QMouseEvent + 0x7b)\n\t0x7efc7f104c3a: QtGui.so.4 + 0x6e1c3a (_ZN11QToolButton17mouseReleaseEventEP11QMouseEvent + 0xa)\n\t0x7efc7ec86361: QtGui.so.4 + 0x263361 (_ZN7QWidget5eventEP6QEvent + 0x451)\n\t0x7efc7f02f7ef: QtGui.so.4 + 0x60c7ef (_ZN15QAbstractButton5eventEP6QEvent + 0x3f)\n\t0x7efc7f10774d: QtGui.so.4 + 0x6e474d (_ZN11QToolButton5eventEP6QEvent + 0x3d)\n\t0x7efc7ec27e4f: QtGui.so.4 + 0x204e4f (_ZN19QApplicationPrivate13notify_helperEP7QObjectP6QEvent + 0xaf)\n\t0x7efc7ec2e6d3: QtGui.so.4 + 0x20b6d3 (_ZN12QApplication6notifyEP7QObjectP6QEvent + 0x3b3)\n\t0x7efca569e5b4: QtCore.so.4 + 0x1a65b4 (_ZN16QCoreApplication14notifyInternalEP7QObjectP6QEvent + 0x84)\n\t0x7efc7ec2b0c5: QtGui.so.4 + 0x2080c5 (_ZN19QApplicationPrivate14sendMouseEventEP7QWidgetP11QMouseEventS1_S1_PS1_R8QPointerIS0_Eb + 0x135)\n\t0x7efc7ecaec89: QtGui.so.4 + 0x28bc89\n\t0x7efc7ecad993: QtGui.so.4 + 0x28a993 (_ZN12QApplication15x11ProcessEventEP7_XEvent + 0xe03)\n\t0x7efc7ecd8d32: QtGui.so.4 + 0x2b5d32\n\t0x7efc7798ae04: glib-2.0.so.0 + 0x48e04 (g_main_context_dispatch + 0x254)\n\t0x7efc7798b048: glib-2.0.so.0 + 0x49048\n\t0x7efc7798b0ec: glib-2.0.so.0 + 0x490ec (g_main_context_iteration + 0x2c)\n\t0x7efca56d1505: QtCore.so.4 + 0x1d9505 (_ZN20QEventDispatcherGlib13processEventsE6QFlagsIN10QEventLoop17ProcessEventsFlagEE + 0x65)\n\t0x7efc7ecd887f: QtGui.so.4 + 0x2b587f\n\t0x7efca569d5c5: QtCore.so.4 + 0x1a55c5 (_ZN10QEventLoop13processEventsE6QFlagsINS_17ProcessEventsFlagEE + 0x35)\n\t0x7efca569d998: QtCore.so.4 + 0x1a5998 (_ZN10QEventLoop4execE6QFlagsINS_17ProcessEventsFlagEE + 0x128)\n\t0x7efca56a27c4: QtCore.so.4 + 0x1aa7c4 (_ZN16QCoreApplication4execEv + 0xb4)\n\t   0x401ea8: quartus + 0x1ea8 (_Z8qgq_mainiPPKc + 0x68)\n\t0x7efc8453e7e0: ccl_msg + 0x407e0 (_Z15msg_main_threadPv + 0x10)\n\t0x7efc8189602c: ccl_thr + 0x602c (thr_final_wrapper + 0xc)\n\t0x7efc8453e89f: ccl_msg + 0x4089f (_Z18msg_thread_wrapperPFPvS_ES_ + 0x62)\n\t0x7efc81f07559: ccl_mem + 0xa559 (_Z18mem_thread_wrapperPFPvS_ES_ + 0x99)\n\t0x7efc81cd4f92: ccl_err + 0x8f92 (_Z18err_thread_wrapperPFPvS_ES_ + 0x27)\n\t0x7efc818963f2: ccl_thr + 0x63f2 (thr_thread_wrapper + 0x15)\n\t0x7efc84540c37: ccl_msg + 0x42c37 (_Z12msg_exe_mainiPPKcPFiiS1_E + 0xa3)\n\t   0x401f7a: quartus + 0x1f7a (main + 0x26)\n\t0x7efc78b72f45: c.so.6 + 0x21f45 (__libc_start_main + 0xf5)\n\t   0x401d59: quartus + 0x1d59\n",
+		"subsystem" : "SEDQ"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "16.1.2",
+		"build" : "203",
+		"edition" : "Lite Edition"
+	}
+}
